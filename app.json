@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "Fillr",
+    "slug": "fillr",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#080808"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.yourname.fillr",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Fillr uses your location to find the cheapest fuel stations nearby.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Fillr uses your location to find the cheapest fuel stations nearby."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#080808"
+      },
+      "package": "com.yourname.fillr",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Fillr uses your location to find cheap fuel nearby."
+        }
+      ],
+      "expo-router"
+    ],
+    "scheme": "fillr",
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
